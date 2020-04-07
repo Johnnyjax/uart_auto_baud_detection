@@ -1,0 +1,10 @@
+
+State Machine - |uart_aut_baud|uart_rx:uart_rx_unit|state_reg
+Name state_reg.stop state_reg.data state_reg.start state_reg.idle2 state_reg.idle1 state_reg.baud state_reg.idle0 
+state_reg.idle0 0 0 0 0 0 0 0 
+state_reg.baud 0 0 0 0 0 1 1 
+state_reg.idle1 0 0 0 0 1 0 1 
+state_reg.idle2 0 0 0 1 0 0 1 
+state_reg.start 0 0 1 0 0 0 1 
+state_reg.data 0 1 0 0 0 0 1 
+state_reg.stop 1 0 0 0 0 0 1 
